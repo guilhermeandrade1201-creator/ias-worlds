@@ -1,0 +1,29 @@
+name: Sugestão de melhoria
+ description: Proponha uma melhoria ou funcionalidade
+ title: "[Melhoria]: "
+ labels: ["enhancement"]
+ body:
+  - type: markdown
+    attributes:
+      value: "Descreva a proposta e como ela se relaciona com as leis, políticas ou agentes do mundo."
+  - type: textarea
+    id: problem
+    attributes:
+      label: Necessidade ou problema
+      description: Que necessidade a proposta atende?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Solução proposta
+      description: Explique a mudança e os sistemas afetados.
+    validations:
+      required: true
+  - type: textarea
+    id: tests
+    attributes:
+      label: Critérios de aceitação ou testes
+      description: Como verificar que a proposta funciona?
+    validations:
+      required: false
